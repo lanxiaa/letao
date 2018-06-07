@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端的视口 让页面再移动端展示的时候不会缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入站点图标  rel="icon"  href的路径为图标路径 -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/index.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 1.头部区域 -->
+    <header id="header">
+        <h4>乐淘云购</h4>
+        <a class="fa fa-search" aria-hidden="true"></a>
+    </header>
+    <!-- 2.轮播图区域 -->
+    <section id="slide">
+        <div class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner4.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
+            </div>
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+          </div>
+    </section>
+    <!-- 3.导航区域 -->
+    <nav id="nav"></nav>
+    <!-- 4.广告区域 -->
+    <section id="banner"></section>
+
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
